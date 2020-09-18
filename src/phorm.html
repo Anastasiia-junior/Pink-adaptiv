@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#"><img src="assets/img/logotype-white-desktop.png" alt="логотип" width="147" height="40"></a>
+    <nav>
+      <button type="button">Открыть меню</button>
+      <ul>
+        <li><a>Главная</a></li>
+        <li><a href="#">Фотографии</a></li>
+        <li><a href="#">Конкурс</a></li>
+        <li><a href="#">html academy</a></li>
+      </ul>
+    </nav>
+    <p>Фотографии пользователей</p>
+  </header>
+  <main>
+    <h1>Форма для отправки истории для конкурса</h1>
+    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset>
+        <p>
+          <label for="Surname">Фамилия</label>
+          <input type="text" id="Surname" name="Surname" placeholder="Укажите фамилию *">
+        </p>
+        <p>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя *">
+        </p>
+        <p>
+          <label for="patronym">Отчество</label>
+          <input type="text" id="patronym" name="patronym" placeholder="Ну и отчество тоже">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Ваши безбашенные достижения</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="photo-with-shark" checked>
+              Сделал фото с акулой
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="sun-tan" checked>
+              Обгорел на пляже
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="see-chack-norris">
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="buy-souvenirs">
+              Накупил сувениров
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="hold-tower" checked>
+              Удержал башню
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="crash-hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Контактная информация</legend>
+        <p>
+          <label for="telephon">Номер телефона</label>
+          <input type="tel" id="telephon" name="user-tel" placeholder="Номер, пожалуйста">
+        </p>
+        <p>
+          <label for="email">Адрес почты</label>
+          <input type="email" id="email" name="user-email" placeholder="Введите почту *">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>
+          С каким приложением путешествовали?
+        </legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="apps" value="ios">
+              Pink для iOS
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="apps" value="android">
+              Pink на Android
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="apps" value="windows">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <ul>
+          <li>
+            <label for="emotion">Опишите свои эмоции</label>
+            <textarea name="user-emotions" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Отправить форму</button>
+      <p>* — обязательные поля</p>
+    </form>
+  </main>
+  <footer>
+    <div>
+        <img src="assets/img/logotype-blue-desktop.png" alt="логотип">
+        <ul>
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Фэйсбук</a></li>
+          <li><a href="#">Что-то</a></li>
+        </ul>
+      <p>Разработано</p>
+    </div>
+  </footer>
+</body>
+</html>

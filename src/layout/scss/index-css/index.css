@@ -236,14 +236,17 @@ input[type="radio"].visually-hidden {
   padding: 10px 35px;
   font-size: 18px;
   line-height: 27px;
+  font-weight: 700;
 }
 
 .download-box {
-  position: -webkit-sticky;
-  position: sticky;
   padding-top: 25px;
   text-align: center;
   padding-bottom: 35px;
+}
+
+.slogan {
+  display: none;
 }
 
 .download-icon {
@@ -261,9 +264,53 @@ input[type="radio"].visually-hidden {
 }
 
 .download-text {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+@media (min-width: 375px) {
+  .nav-wrapper {
+    margin-bottom: 410px;
+  }
+}
+
+@media (min-width: 425px) {
+  .nav-wrapper {
+    margin-bottom: 460px;
+  }
+}
+
+@media (min-width: 660px) {
+  .container {
+    width: 620px;
+  }
+  .header {
+    background-image: url(../../../assets/img/back-tablet@1x.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .header-wrapper {
+    background-image: url(../../../assets/img/iphone-5-in-hand-png.png);
+    background-size: 69%;
+    background-position: 90% bottom;
+    background-repeat: no-repeat;
+  }
+  .nav-wrapper {
+    margin-bottom: 100px;
+  }
+  .download-box {
+    width: 300px;
+  }
+  .slogan {
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+  .download-icon {
+    padding: 0;
+  }
 }
 
 *,

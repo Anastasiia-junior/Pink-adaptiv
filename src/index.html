@@ -9,28 +9,50 @@
   <title>Главная</title>
 </head>
 <body>
-  <header>
-    <a class="" href="#"><img src="assets/img/logotype-white-desktop.png" alt="логотип"></a>
-    <nav class="">
-      <button class="" type="button">Открыть меню</button>
-      <ul class="">
-        <li class=""><a>Главная</a></li>
-        <li class=""><a href="#">Фотографии</a></li>
-        <li class=""><a href="#">Конкурс</a></li>
-        <li class=""><a href="#">html academy</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="burger-nav burger-nav--hidden">
+      <div class="main-nav__item">
+        <div class="main-nav__item--logo container">
+          <a href="#">Pink</a>
+          <button class="button--close-nav" type="button" aria-label="Закрыть меню"></button>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-wrapper">
+      <div class="main-nav__item--logo container">
+        <a href="#">Pink</a>
+        <button class="button--open-nav" type="button" aria-label="открыть меню">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <a class="logo-link" href="#"><img src="assets/img/logotype-white-desktop.png" alt="логотип" width="80" height="27"></a>
+      <section class="download-box">
+        <h2 class="visually-hidden">Ресурсы для скачивания приложения</h2>
+        <button class="button" type="button">Скачать приложение</button>
+        <div class="download-icon">
+          <a href="#"><img class="" src="assets/img/apple-logo.png" alt="aple logo" width="51" height="62"></a>
+          <a href="#"><img class="" src="assets/img/android-logo.png" alt="android logo" width="48" height="56"></a>
+          <a href="#"><img class="" src="assets/img/microsoft-logo.png" alt="microsoft logo" width="48" height="42"></a>
+        </div>
+        <p class="download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </div>
   </header>
   <main>
-    <h1 class="">Главная страница</h1>
-    <section class="">
-      <h2 class="">Ресурсы для скачивания приложения</h2>
-      <button class="" type="button">Скачать приложение</button>
-      <img class="" src="assets/img/apple-logo.png" alt="aple logo">
-      <img class="" src="assets/img/android-logo.png" alt="android logo">
-      <img class="" src="assets/img/microsoft-logo.png" alt="microsoft logo">
-      <p class="">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
+    <h1 class="visually-hidden">Главная страница</h1>
+
     <section class="">
       <h2 class="">Преимущества</h2>
       <p class="">Устали от серости магаполиса?<br>

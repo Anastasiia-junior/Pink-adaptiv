@@ -127,7 +127,17 @@
   display: none;
 }
 
-.button {
+.download-box {
+  padding-top: 25px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.slogan {
+  display: none;
+}
+
+.download-button {
   width: 100%;
   background-color: transparent;
   color: $back-ground-color;
@@ -139,14 +149,16 @@
   font-weight: 700;
 }
 
-.download-box {
-  padding-top: 25px;
-  text-align: center;
-  padding-bottom: 35px;
+.download-button:hover,
+.download-button:focus {
+  color: $font-color-hover;
+  background-color: $back-ground-color;
 }
 
-.slogan {
-  display: none;
+.download-button:active {
+  color: $font-color-active;
+  border: none;
+  outline: none;
 }
 
 .download-icon {

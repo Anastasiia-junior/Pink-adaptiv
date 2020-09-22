@@ -26,18 +26,22 @@
 
 .main-nav__item--logo {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-.main-nav__item--logo a {
-  display: block;
+.burger__link {
   color: $back-ground-color;
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.logo-link--tablet {
+  display: none;
 }
 
 .button--close-nav {
@@ -91,8 +95,8 @@
   margin: 0 auto;
 }
 
-.main-nav {
-
+.main-nav--desctop {
+  display: none;
 }
 
 .main-nav__list {
@@ -119,7 +123,7 @@
   font-weight: 400;
 }
 
-.logo-link {
+.logo-link--desctop {
   display: none;
 }
 
@@ -171,22 +175,25 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 640px) {
   .container {
     width: 620px;
   }
 
   .header {
-    background-image: url(../../../assets/img/back-tablet@1x.jpg);
-    background-size: auto;
+    background-image: url(../../../assets/img/back-desctop.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .header-wrapper {
-    background-image: url(../../../assets/img/iphone-5-in-hand-png.png);
-    background-size: 69%;
-    background-position: 90% bottom;
-    background-repeat: no-repeat;
+  .logo-wrapper {
+    position: relative;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .logo-link--tablet {
+    display: block;
   }
 
   .nav-wrapper {
@@ -195,6 +202,7 @@
 
   .download-box {
     width: 300px;
+    padding-top: 0px;
   }
 
   .slogan {
@@ -207,5 +215,54 @@
   .download-icon {
     padding: 0;
   }
+
+}
+
+@media (min-width: 940px) {
+  .container {
+    width: 920px;
+  }
+
+.download-box {
+  padding-bottom: 100px;
+}
+
+.logo-link--desctop {
+  display: block;
+  width: 150px;
+  height: 47px;
+}
+
+.logo-link--tablet {
+  display: none;
+}
+
+.logo-link--mobile {
+  display: none;
+}
+
+.button--open-nav {
+  display: none;
+}
+
+.main-nav--desctop {
+  display: block;
+}
+
+.main-nav--dectop__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 626px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.main-nav--dectop__link {
+  color: $back-ground-color;
+  font-size: 18px;
+  text-decoration: none;
+}
 
 }

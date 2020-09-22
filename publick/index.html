@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../normalize.css">
-  <link rel="stylesheet" href="layout/scss/index-css/index.css">
+  <link rel="stylesheet" href="../src/layout/scss/index-css/index.css">
   <title>Главная</title>
 </head>
 <body>
@@ -14,28 +14,39 @@
       <div class="burger-nav burger-nav--hidden">
         <div class="main-nav__item">
           <div class="main-nav__item--logo container">
-            <a href="#">Pink</a>
-            <a class="logo-link" href="#"><img src="assets/img/logotype-white-desktop.png" alt="логотип" width="80" height="27"></a>
+            <a class=" burger__link logo-link--mobile" href="#" >Pink</a>
             <button class="button--close-nav" type="button" aria-label="Закрыть меню"></button>
           </div>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+            <li class="main-nav__item"><a class="burger__link main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="burger__link main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="burger__link main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="burger__link main-nav__link" href="#">html academy</a></li>
           </ul>
         </nav>
       </div>
       <div class="nav-wrapper">
         <div class="main-nav__item--logo container">
-          <a href="#">Pink</a>
+          <div class="logo-wrapper">
+            <a class="burger__link logo-link--tablet" href="#"><img src="../src/assets/img/logotype-white-tablet.png" alt=""></a>
+            <a class="burger__link logo-link--mobile" href="#">Pink</a>
+            <a class="burger__link logo-link--desctop" href="#"><img src="../src/assets/img/logotype-white-desktop.png" alt="логотип" width="150" height="47"></a>
+          </div>
           <button class="button--open-nav" type="button" aria-label="открыть меню">
             <div></div>
             <div></div>
             <div></div>
           </button>
+          <nav class="main-nav--desctop">
+            <ul class="main-nav--dectop__list">
+              <li class="main-nav--dectop__item"><a class="main-nav--dectop__link">Главная</a></li>
+              <li class="main-nav--dectop__item"><a class="main-nav--dectop__link" href="#">Фотографии</a></li>
+              <li class="main-nav--dectop__item"><a class="main-nav--dectop__link" href="#">Конкурс</a></li>
+              <li class="main-nav--dectop__item"><a class="main-nav--dectop__link" href="#">html academy</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div class="container">
@@ -44,9 +55,9 @@
           <p class="slogan">Взгляните на&nbsp;жизнь иначе!</p>
           <button class="button" type="button">Скачать приложение</button>
           <div class="download-icon">
-            <a href="#"><img class="" src="assets/img/apple-logo.png" alt="aple logo" width="51" height="62"></a>
-            <a href="#"><img class="" src="assets/img/android-logo.png" alt="android logo" width="48" height="56"></a>
-            <a href="#"><img class="" src="assets/img/microsoft-logo.png" alt="microsoft logo" width="48" height="42"></a>
+            <a href="#"><img class="" src="../src/assets/img/apple-logo.png" alt="aple logo" width="51" height="62"></a>
+            <a href="#"><img class="" src="../src/assets/img/android-logo.png" alt="android logo" width="48" height="56"></a>
+            <a href="#"><img class="" src="../src/assets/img/microsoft-logo.png" alt="microsoft logo" width="48" height="42"></a>
           </div>
           <p class="download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
         </section>
@@ -157,9 +168,9 @@
       </div>
     </section>
     <div class="">
-      <img src="assets/img/map.png" alt="ул. Большая Конюшенная, 19/8">
+      <img src="../src/assets/img/map.png" alt="ул. Большая Конюшенная, 19/8">
       <div class="">
-        <img src="assets/img/logotype-blue-desktop.png" alt="логотип">
+        <img src="../src/assets/img/logotype-blue-desktop.png" alt="логотип">
         <ul class="">
           <li class=""><a href="#">Твиттер</a></li>
           <li class=""><a href="#">Фэйсбук</a></li>

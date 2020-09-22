@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="layout/scss/form-css/form.css">
+</head>
+<body>
+  <header class="">
+    <a class="" href="#"><img src="assets/img/logotype-white-desktop.png" alt="логотип" width="147" height="40"></a>
+    <nav class="">
+      <button class="" type="button">Открыть меню</button>
+      <ul class="">
+        <li class=""><a>Главная</a></li>
+        <li class=""><a href="#">Фотографии</a></li>
+        <li class=""><a href="#">Конкурс</a></li>
+        <li class=""><a href="#">html academy</a></li>
+      </ul>
+    </nav>
+    <p class="">Фотографии пользователей</p>
+  </header>
+  <main class="">
+    <h1 class="">Форма для отправки истории для конкурса</h1>
+    <p class="">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните</p>
+    <form class="" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="">
+        <p class="">
+          <label for="Surname">Фамилия</label>
+          <input type="text" id="Surname" name="Surname" placeholder="Укажите фамилию *">
+        </p>
+        <p class="">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя *">
+        </p>
+        <p class="">
+          <label for="patronym">Отчество</label>
+          <input type="text" id="patronym" name="patronym" placeholder="Ну и отчество тоже">
+        </p>
+      </fieldset>
+      <fieldset class="">
+        <legend class="">Ваши безбашенные достижения</legend>
+        <ul class="">
+          <li class="">
+            <label>
+              <input type="checkbox" name="photo-with-shark" checked>
+              Сделал фото с&nbsp;акулой
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="checkbox" name="sun-tan" checked>
+              Обгорел на&nbsp;пляже
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="checkbox" name="see-chack-norris">
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="checkbox" name="buy-souvenirs">
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="checkbox" name="hold-tower" checked>
+              Удержал башню
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="checkbox" name="crash-hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="">
+        <legend>Контактная информация</legend>
+        <p class="">
+          <label for="telephon">Номер телефона</label>
+          <input type="tel" id="telephon" name="user-tel" placeholder="Номер, пожалуйста">
+        </p>
+        <p class="">
+          <label for="email">Адрес почты</label>
+          <input type="email" id="email" name="user-email" placeholder="Введите почту *">
+        </p>
+      </fieldset>
+      <fieldset class="">
+        <legend>
+          С&nbsp;каким приложением путешествовали?
+        </legend>
+        <ul class="">
+          <li class="">
+            <label>
+              <input type="radio" name="apps" value="ios">
+              Pink для iOS
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="radio" name="apps" value="android">
+              Pink на Android
+            </label>
+          </li>
+          <li class="">
+            <label>
+              <input type="radio" name="apps" value="windows">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="">
+        <ul class="">
+          <li class="">
+            <label for="emotion">Опишите свои эмоции</label>
+            <textarea name="user-emotions" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="" type="submit">Отправить форму</button>
+      <p class="">* &mdash; обязательные поля</p>
+    </form>
+  </main>
+  <footer class="">
+    <div class="">
+        <img class="" src="assets/img/logotype-blue-desktop.png" alt="логотип">
+        <ul class="">
+          <li class=""><a href="#">Твиттер</a></li>
+          <li class=""><a href="#">Фэйсбук</a></li>
+          <li class=""><a href="#">Что-то</a></li>
+        </ul>
+      <p class="">Разработано</p>
+    </div>
+  </footer>
+</body>
+</html>

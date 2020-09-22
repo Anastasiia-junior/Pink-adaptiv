@@ -1,0 +1,56 @@
+//global
+$font-color: hsla(211, 42%, 27%, 1);
+$back-ground-color: #ffffff;
+$modify-font-color: hsla(344, 81%, 82%, 1);
+$button-color: hsla(151, 75%, 67%, 1);
+$dark-blue: hsla(213, 41%, 19%, 1);
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desctop-width: 1200px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $font-color;
+
+  background-color: $back-ground-color;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
